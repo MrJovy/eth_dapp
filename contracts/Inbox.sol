@@ -4,8 +4,8 @@ pragma solidity ^0.8.6;
 contract Inbox {
     string public message;
 
-    function inbox(string memory initialMessage) public {
-        message = initialMessage;
+    constructor(string memory _message) {
+        message = _message;
     }
 
     function setMessage(string memory newMessage) public {
